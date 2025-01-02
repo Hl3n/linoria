@@ -3053,11 +3053,10 @@ function Library:CreateWindow(...)
         BackgroundColor3 = 'MainColor';
         BorderColor3 = 'OutlineColor';
     });
-  WindowLabel.RichText = true
-
-    function Window:SetWindowTitle(Title)
-        WindowLabel.Text = Title;
-    end;
+function Window:SetWindowTitle(Title)
+    WindowLabel.RichText = true
+    WindowLabel.Text = Title
+end
 
     function Window:AddTab(Name)
         local Tab = {
