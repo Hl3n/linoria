@@ -3617,7 +3617,6 @@ end
 
     Window.Holder = Outer;
     WindowLabel.RichText = true;
-    WindowLabel.Text = '<font color="red">COOL</font> * <font color="blue">GUY</font>'
     return Window;
 end;
 
