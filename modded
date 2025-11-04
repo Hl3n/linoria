@@ -150,8 +150,9 @@ function Library:CreateLabel(Properties, IsHud)
         TextColor3 = Library.FontColor;
         TextSize = 16;
         TextStrokeTransparency = 0;
+        RichText = true;
     });
-
+    
     Library:ApplyTextStroke(_Instance);
 
     Library:AddToRegistry(_Instance, {
@@ -160,6 +161,7 @@ function Library:CreateLabel(Properties, IsHud)
 
     return Library:Create(_Instance, Properties);
 end;
+
 
 function Library:MakeDraggable(Instance, Cutoff)
     Instance.Active = true;
